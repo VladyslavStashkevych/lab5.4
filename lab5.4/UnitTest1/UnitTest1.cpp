@@ -12,16 +12,16 @@ public:
 			double sum = SumIter(-1, 1);
 			Assert::AreEqual(0., sum);
 
-			sum = SumRecUpP(-1, 1, -1);
+			sum = SumRecUpP(1, -1);
 			Assert::AreEqual(0., sum);
 
-			sum = SumRecUpM(-1, 1, 1);
+			sum = SumRecUpM(-1, 1);
 			Assert::AreEqual(0., sum);
 
-			sum = SumRecDownP(-1, 1, -1, 0);
+			sum = SumRecDownP(1, -1, 0);
 			Assert::AreEqual(0., sum);
 
-			sum = SumRecDownM(-1, 1, 1, 0);
+			sum = SumRecDownM(-1, 1, 0);
 			Assert::AreEqual(0., sum);
 		}
 	};
